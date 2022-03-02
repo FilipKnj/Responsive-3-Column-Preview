@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100vh;
+  background-color: #f2f2f2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 15px;
+  font-family: "Lexend Deca", serif;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: "Big Shoulders Display", sans-serif;
+}
+
+.container {
+  max-width: 960px;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2rem;
+}
+
+.box {
+  padding: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.box img {
+  width: 20%;
+  height: auto;
+  margin-bottom: 2rem;
+  margin-top: 0.7rem;
+}
+.box h2 {
+  text-transform: uppercase;
+  color: #f2f2f2;
+  font-size: 2.2rem;
+}
+.box p {
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.6rem;
+  letter-spacing: 0.6px;
+  margin-top: 1rem;
+}
+.box a {
+  background: #fff;
+  text-decoration: none;
+  height: 40px;
+  width: 50%;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 1.625rem;
+  color: #fff;
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.box a:hover {
+  background-color: transparent;
+  border: 3px solid #fff;
+  color: #fff;
+  line-height: 40px;
+}
+
+.box1 {
+  background: #e38826;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+.box1 a {
+  color: #e38826;
+}
+
+.box2 {
+  background: #006970;
+}
+.box2 a {
+  color: #006970;
+}
+
+.box3 {
+  background: #004241;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+.box3 a {
+  color: #004241;
+}
+
+@media screen and (max-width: 530px) {
+  .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .box1 {
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+
+  .box3 {
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
+
+  .box {
+    padding: 6%;
+  }
+}

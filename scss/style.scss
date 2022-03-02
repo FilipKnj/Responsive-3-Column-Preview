@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$Bright-orange: hsl(31, 77%, 52%);
+$Dark-cyan: hsl(184, 100%, 22%);
+$Very-dark-cyan: hsl(179, 100%, 13%);
+$Paragraphs: hsla(0, 0%, 100%, 0.75);
+$Very-light-gray: hsl(0, 0%, 95%); // (background, headings, buttons)
+
+html,body{
+    min-height: 100vh;
+    background-color: $Very-light-gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-family: 'Lexend Deca',serif;
+    font-weight: 400;
+}
+
+h2{
+    font-family: 'Big Shoulders Display',sans-serif;
+}
+
+.container{
+    max-width: 960px;
+}
+
+.wrapper{
+    display: flex;
+    margin: 2rem;
+}
+
+.box{
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    img{
+        width: 20%;
+        height: auto;
+        margin-bottom: 2rem;
+        margin-top: .7rem;
+    }
+    h2{
+        text-transform: uppercase;
+        color:$Very-light-gray;
+        font-size: 2.2rem;
+    }
+    p{
+        color:$Paragraphs;
+        line-height: 1.6rem;
+        letter-spacing: .6px;
+        margin-top: 1rem;
+    }
+    a{
+        background:#fff;
+        text-decoration: none;
+        height: 40px;
+        width: 50%;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 1.625rem;
+        color:#fff;
+        display: block;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        transition:all .5s ease;
+        &:hover{
+            background-color: transparent;
+            border:3px solid #fff;
+            color:#fff;
+            line-height: 40px;
+        }
+    }
+}
+
+.box1{
+    background:$Bright-orange;
+    border-radius: 0.5rem 0 0 0.5rem;
+    a{
+        color:$Bright-orange;
+    }
+
+}
+.box2{
+    background:$Dark-cyan;
+    a{
+        color:$Dark-cyan;
+    }
+}
+.box3{
+    background: $Very-dark-cyan;
+    border-radius: 0 0.5rem 0.5rem 0;
+    a{
+        color:$Very-dark-cyan;
+    }
+}
+
+@media screen and (max-width:530px) {
+    .wrapper{
+        flex-direction: column;
+    }
+    .box1{
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+    .box3{
+        border-radius: 0 0 0.5rem 0.5rem;
+    }
+    .box{
+        padding: 6%;
+    }
+}
